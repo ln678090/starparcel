@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { getProducts } from '@/lib/get-products'; // Import hàm lấy dữ liệu từ DB của bạn
-
+import { Product } from '@prisma/client';
 export const metadata: Metadata = {
   title: 'Cửa Hàng Quà Tặng Lưu Niệm | 20 Mẫu Quà Độc Đáo',
   description: 'Bộ sưu tập 20 sản phẩm quà lưu niệm độc đáo không đụng hàng tại StarParcel: nến thơm, sổ tay vintage, hộp nhạc, gấu bông, phụ kiện trang trí.',
@@ -22,7 +22,7 @@ export default async function QuaTangPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {products.map((p) => (
+            {products.map((p:Product) => (
                 <div key={p.id} className="bg-stone-50 dark:bg-stone-900 rounded-xl overflow-hidden border border-stone-200 dark:border-stone-800 hover:border-amber-400 dark:hover:border-amber-500 hover:shadow-xl transition-all group flex flex-col h-full">
                   <div className="relative h-56 overflow-hidden">
                     {p.tag && <span className="absolute top-3 left-3 bg-amber-500 text-stone-900 text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md">{p.tag}</span>}
