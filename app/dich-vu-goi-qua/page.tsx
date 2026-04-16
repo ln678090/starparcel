@@ -30,7 +30,9 @@ export default function DichVuGoiQuaPage() {
               <li>✓ Tag/Thiệp chúc mừng in sẵn</li>
               <li>✓ Lót giấy vụn bọt biển chống sốc</li>
             </ul>
-            <a href="tel:0353115615" className="block text-center w-full py-3 bg-stone-100 text-stone-800 rounded-lg font-bold hover:bg-stone-200">Liên Hệ Đặt Lịch</a>
+            <a  href="https://zalo.me/0372505551" className="block text-center w-full bg-blue-900 dark:bg-stone-900 text-white dark:text-stone-200 font-semibold py-2.5 rounded-lg hover:bg-amber-600 dark:hover:bg-amber-600 transition-colors">
+              Zalo Đặt Lịnh
+            </a>
           </div>
 
           {/* Gói Concept VIP */}
