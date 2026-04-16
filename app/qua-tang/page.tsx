@@ -49,7 +49,7 @@ export default function QuaTangPage() {
               <div className="p-5 flex flex-col flex-grow">
                 <h3 className="text-md font-bold text-stone-800 dark:text-stone-200 mb-2 line-clamp-2">{p.name}</h3>
                 <p className="text-amber-600 dark:text-amber-400 font-bold text-lg mb-4 mt-auto">{p.price}</p>
-                <a href="tel:0372505551" className="block text-center w-full bg-blue-900 dark:bg-stone-800 text-white dark:text-stone-200 font-semibold py-2.5 rounded-lg hover:bg-amber-600 dark:hover:bg-amber-600 transition-colors">
+                <a  href="https://zalo.me/0372505551" className="block text-center w-full bg-blue-900 dark:bg-stone-900 text-white dark:text-stone-200 font-semibold py-2.5 rounded-lg hover:bg-amber-600 dark:hover:bg-amber-600 transition-colors">
                   Zalo Đặt Hàng
                 </a>
               </div>
