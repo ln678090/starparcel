@@ -25,5 +25,9 @@ export function proxy(request: NextRequest) {
 
 // Chỉ định những đường dẫn nào anh bảo vệ cần đứng canh
 export const config = {
-    matcher: ['/admin/:path*', '/api/products/:path*'],
+    matcher: [
+        '/admin/:path*',
+        '/api/products/:path*',
+        '/api/services/:path*'
+    ],
 };
