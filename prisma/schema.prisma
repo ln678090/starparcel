@@ -14,3 +14,11 @@ model Product {
   img   String
   tag   String?
 }
+model Service {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  name      String   // Tên gói (VD: Gói Tiêu Chuẩn)
+  subtitle  String   // Mô tả ngắn (VD: Đẹp, gọn gàng...)
+  price     String   // Giá (VD: Từ 50.000đ)
+  features  String[] // Danh sách các quyền lợi (Lưu dạng mảng)
+  isPopular Boolean  @default(false) // Đánh dấu xem có phải gói Phổ biến nhất không
+}
